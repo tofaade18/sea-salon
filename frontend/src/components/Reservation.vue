@@ -21,7 +21,7 @@
           <div class="form-group mb-3">
             <label for="phoneNumber">Phone Number</label>
             <input
-              type="tel"
+              type="number"
               class="form-control"
               id="phoneNumber"
               v-model="reservation.phoneNumber"
@@ -60,6 +60,17 @@
         </form>
       </div>
     </div>
+    <h4 style="margin-top: 30px;">All Reservations</h4>
+    <div class="reservations mt-5" style="display: grid; grid-template-columns: repeat(6,1fr);">
+      <div v-for="reservation in reservations" :key="reservation.id" class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ reservation.name }}</h5>
+          <p class="card-text"><strong>Phone Number:</strong> {{ reservation.phoneNumber }}</p>
+          <p class="card-text"><strong>Service Type:</strong> {{ reservation.serviceType }}</p>
+          <p class="card-text"><strong>Date and Time:</strong> {{ reservation.datetime }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -77,7 +88,8 @@ export default {
         serviceType: '',
         datetime: ''
       },
-      message:''
+      message:'',
+      reservations: []
     };
   },
   computed: {
@@ -100,7 +112,6 @@ export default {
           datetime: this.reservation.datetime,
           userId: this.isUser.id
         };
-
       const toast = useToast();
       ReservationDataService.create(data)
       .then(response => {
@@ -121,6 +132,15 @@ export default {
     isInvalidTime(datetime) {
       const time = new Date(datetime).getHours();
       return (time >= 21 || time < 9);
+    },
+    fetchReservations() {
+      ReservationDataService.getAll()
+        .then(response => {
+          this.reservations = response.data;
+        })
+        .catch(e => {
+          console.log(e);
+        });
     }
   },
   mounted() {
@@ -128,13 +148,14 @@ export default {
     if (!isuser.user) {
       this.$router.push('/login');
     }
+    this.fetchReservations();
   }
 };
 </script>
 
 <style scoped>
 .container {
-  max-width: 600px;
+  max-width: 1200px;
 }
 
 .card {
