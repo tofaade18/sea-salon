@@ -8,8 +8,8 @@
     
     <!-- Featured Section -->
     <section id="featured" style="background-color: rgba(30, 20, 18,0.8);">
-      <div class="wrapper" style="flex-direction: row-reverse">
-        <div class="image">
+      <div class="wrapper" style="flex-direction: row-reverse;">
+        <div class="image mb-5">
           <img src="https://www.pngitem.com/pimgs/m/42-422052_hair-gel-png-download-image-cosmetics-transparent-png.png" alt="Facial Cream">
         </div>
         <div class="text mr-2">

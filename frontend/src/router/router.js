@@ -5,6 +5,7 @@ import Register from '@/components/Register.vue';
 import Reservation from '@/components/Reservation.vue';
 import Hairstyle from '@/components/Hairstyle.vue';
 import Facial from '@/components/Facial.vue';
+import Manicure from '@/components/Manicure.vue';
 const routes = [
     {
         path: '/login',
@@ -30,6 +31,11 @@ const routes = [
         path: '/facial',
         name: 'Facial',
         component: Facial
+    },
+    {
+        path: '/manicure',
+        name: 'Manicure',
+        component: Manicure
     },
     {
         path: '/hairstyle',

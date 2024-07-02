@@ -21,7 +21,7 @@
           <div class="form-group mb-3">
             <label for="phoneNumber">Phone Number</label>
             <input
-              type="number"
+              type="text"
               class="form-control"
               id="phoneNumber"
               v-model="reservation.phoneNumber"
@@ -62,7 +62,7 @@
     </div>
     <h4 style="margin-top: 30px;">All Reservations</h4>
     <div class="reservations mt-5" style="display: grid; grid-template-columns: repeat(6,1fr);">
-      <div v-for="reservation in reservations" :key="reservation.id" class="card mt-3">
+      <div v-for="reservation in reservations" :key="reservation.id" class="card mt-3" style="margin-right: 10px;">
         <div class="card-body">
           <h5 class="card-title">{{ reservation.name }}</h5>
           <p class="card-text"><strong>Phone Number:</strong> {{ reservation.phoneNumber }}</p>
@@ -117,6 +117,7 @@ export default {
       .then(response => {
         console.log(response.data);
         toast.success('Reservation submitted successfully!');
+        this.fetchReservations();
       })
       .catch(e => {
         console.log(e.message);

@@ -15,22 +15,6 @@
       </div>
 
       <div v-if="!currentUser" class="navbar-nav nav-pills ml-auto">
-        <!-- <li class="nav-item dropdown">
-          <router-link to="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <font-awesome-icon icon="boxes" /> Product and Services
-          </router-link>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <router-link to="/haircuts" class="dropdown-item">
-              <font-awesome-icon icon="cut" /> Haircuts and Styling
-            </router-link>
-            <router-link to="/manicure" class="dropdown-item">
-              <font-awesome-icon icon="hand-sparkles" /> Manicure and Pedicure
-            </router-link>
-            <router-link to="/facial" class="dropdown-item">
-              <font-awesome-icon icon="spa" /> Facial Treatments
-            </router-link>
-          </div>
-        </li> -->
         <li class="nav-item">
           <router-link to="/reservation" class="nav-link" active-class="active">
             <font-awesome-icon icon="calendar-alt" /> Reservation

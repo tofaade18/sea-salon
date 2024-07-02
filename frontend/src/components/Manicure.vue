@@ -1,99 +1,39 @@
 <template>
     <div class="hero">
-      <div class="hero-img">
-        <img src="https://i.postimg.cc/kMNz5grj/flower.png" alt="Skincare">
-      </div>
       <div class="hero-text">
-        <h1>Your Skin</br> Would Loved It!</h1>
+        <h1>ManyPedy<br> Totally Cleany</h1>
         <a href="#featured" class="btn">Explore</a>
       </div>
-    </div>
-    
-    <!-- Featured Section -->
-    <section id="featured">
-      <div class="title title-left">
-        <span class="line"></span><h3>New Friend!</h3>
-      </div>
-      <div class="wrapper">
-        <div class="image">
-          <img src="https://i.postimg.cc/DyM1SgNb/flower-copy.png" alt="Facial Cream">
+    </div>    
+    <section id="featured" style="background-color: blanchedalmond;">
+      <div class="wrapper" style="flex-direction: row-reverse;">
+        <div class="image mb-5">
+          <img src="https://images.herzindagi.info/image/2023/Jan/manicure-main.jpg" alt="Manicure">
         </div>
         <div class="text">
-          <h2>Facial Cream</h2>
-          <p>A lightweight formula that packs a punch with avocado protein extract to strengthen skin's own moisture barrier, sealing in hydration to protect, nourish and soften skin.</p>
+          <h2>Manicure Pedicure</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque veritatis deleniti laudantium officia maxime eos illum magni quis quia nesciunt voluptatibus cumque neque saepe, possimus nulla expedita a nisi?</p>
           <a href="#" class=btn>Details</a>
         </div>
       </div>
     </section>
     
-    <!-- Collection Section -->
-    <section id="collections">
-      <div class="title title-right">
-        <span class="line line-right"></span><h3>Collections</h3>
-      </div>
-      <div class="wrapper">
-        <a class="box box1" href="#">
-          <h4>Moisturizers</h4>
-          <div class="box-overlay"></div>
-        </a>
-        <a class="box box2" href="#">
-          <h4>Eye & Lip Care</h4>
-          <div class="box-overlay"></div>
-        </a>
-        <a class="box box3" href="#">
-          <h4>Cleansers & Toners</h4>
-          <div class="box-overlay"></div>
-        </a>
-      </div>
-    </section>
-    
-    <!-- About Section -->
     <section id="about">
-      <div class="title title-left">
-        <span class="line"></span><h3>Skincare</h3>
-      </div>
       <div class="wrapper">
         <div class="text">
-          <p>Since 2016, Our Skin Care has been at the forefront of the move towards organic and natural skincare.</p>
-          <p>Specialising in emerging niche natural skin care brands, Our Skin Care is a safe zone for you and your skin where we have taken special care to hand pick and offer you some of the purest and safest brands from global organic specialists.</p>
-          <p>From cutting edge science to luxurious natural indulgence, we have selected the best products and treatments for healing and improving your well-being.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda autem cumque beatae dignissimos facere culpa deserunt, asperiores, inventore libero officiis qui, quo explicabo debitis iusto quibusdam illum. Dolores, necessitatibus inventore?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae mollitia debitis minus explicabo aliquam non velit dignissimos rerum officia porro doloremque ducimus magnam consectetur, veniam illum odit natus, commodi quasi.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat fugiat dolor, est corrupti enim eligendi quasi similique dolorem culpa deserunt blanditiis esse aspernatur voluptates et fugit neque eius recusandae molestias!</p>
         </div>
         <div class="video-wrapper">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/otej7WLdPh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="wrapper">
-        <div class="form-wrapper">    
-          <h4>Add More Beauty To Your Email</h4>
-          <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <input type="email" id="email" name="email" placeholder="Your email" required>
-            <input type="submit" id="submit" value="OK" class="submit">
-          </form>
-        </div>
-        <div class="contact-wrapper">
-          <h4>Stay In Touch With Us</h4>
-          <div class="wrapper">        
-            <ul class="social-menu">
-              <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-            </ul>
-            <a class="contact-footer contact-tel" href="#"><i class="fa fa-phone" aria-hidden="true"></i>001-283-4892</a>
-            <a class="contact-footer contact-email" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Send an email</a>
-          </div>
-        </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/E-lESftSWo0?si=Cnb0vuO8NNSJwi2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
       </div>
     </section>
       </template>
       
       <script>
       export default {
-        name: 'Facial'
+        name: 'Facial-page'
       }
       </script>
       
@@ -115,16 +55,12 @@
         display: flex;
         height: 100vh;
         align-items: center;
-        background: #f5d9d6 url("https://i.postimg.cc/9fTzqwtw/flower2.png") no-repeat right bottom;
-    }
-    .hero-img img{
-      display: none;
+        background: linear-gradient(rgba(36, 39, 38, 0.5), rgba(36, 39, 38, 0.5)), rgba(36, 39, 38, 0.5) url('https://media.istockphoto.com/id/1173495015/photo/female-hands-with-white-manicure-and-pedicure-on-pink-and-blue-background-top-view.jpg?s=612x612&w=0&k=20&c=M8NIryVPDXn94sMbzJsF-_V2A86D8woJ8VIaPOJTD5c=') no-repeat center;
+        background-size: cover;
     }
     .hero-text{
       padding: 0 2em 7.5em;
     }
-    
-    /* Featured Section */
     #featured .image img{
       width: 100%;
       height: auto;
@@ -281,7 +217,6 @@
       
       /*  Hero Section  */
       .hero{
-        background-image: none;
         justify-content: center;
         overflow: hidden;
       }

@@ -23,7 +23,7 @@
     </div>
     <div class="feedback-form">
     <h2 id="fh2">WE APPRECIATE YOUR REVIEW!</h2>
-<h6 id="fh6">Your review will help us to improve our web hosting quality products, and customer services.</h6>
+<h6 id="fh6">Your review will help us to improve our products and customer services.</h6>
 
 
 <form id="feedback" @submit.prevent="processReview">
@@ -73,8 +73,8 @@
 
 
 </form>
-<h2 style="margin-bottom: 30px;">Review Box</h2>
-<div v-for="item in ulasanall" :key="item.id" class="review">
+<h2 style="margin-bottom: 30px; margin-left: 20px">Review from Our Customers</h2>
+<div v-for="item in ulasanall" :key="item.id" class="review" style="margin-left: 20px;">
     <div class="review-box">
       <div class="review-author">
         <div class="review-author-img">
