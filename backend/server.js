@@ -4,7 +4,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "https://sea-salon-jf4m-k3lg3fzw4-tofaade18s-projects.vercel.app"
 };
 
 app.use(cors(corsOptions));

@@ -1,12 +1,23 @@
 [
     {
-        "username":"ilyasa",
-        "email":"iyasaffan@gmail.com",
-        "password":"ilyasilyasa"
+        "userID" : "thomas1",
+        "fullName" : "Thomas N",
+        "email" : "thomas.n@compfest.id",
+        "phoneNumber" : "08123456789",
+        "password" : "Admin123"
     },
     {
-        "username":"ferdy",
-        "email":"ferdy@gmail.com",
-        "password":"ferdy1313"
-    }   
+        "userID" : "tofa1",
+        "fullName" : "tofaaa",
+        "email" : "nu@gmail.com",
+        "phoneNumber" : "012939493939",
+        "password" : "test12"
+    },
+    {
+        "userID" : "tofa0",
+        "fullName" : "Tofa Ade Nugraha2",
+        "email" : "n@gmail.com",
+        "phoneNumber" : "012939493939",
+        "password" : "test12"
+    }
 ]

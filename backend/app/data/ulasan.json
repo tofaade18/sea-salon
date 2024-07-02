@@ -1,12 +1,44 @@
 [
     {
-        "ulasan": "keren banget obatnya banyak",
-        "rating": 5,
-        "gambar" : ""
+        "id": 1,
+        "name": "sadasdasd",
+        "ulasan": "adasdasd",
+        "rating": 4,
+        "createdAt": "2024-07-01T16:32:07.152Z",
+        "updatedAt": "2024-07-02T10:53:47.475Z",
+        "userId": 2,
+        "ulas": {
+            "id": 2,
+            "createdAt": "2024-07-01T14:21:37.467Z",
+            "updatedAt": "2024-07-01T14:21:37.467Z"
+        }
     },
     {
-        "ulasan": "keren banget obatnya banyak",
-        "rating": 5,
-        "gambar" : ""
+        "id": 9,
+        "name": "dasnasjdbj",
+        "ulasan": "tes 1234",
+        "rating": 1,
+        "createdAt": "2024-07-02T15:33:33.590Z",
+        "updatedAt": "2024-07-02T15:49:52.136Z",
+        "userId": 4,
+        "ulas": {
+            "id": 4,
+            "createdAt": "2024-07-02T15:32:24.912Z",
+            "updatedAt": "2024-07-02T15:32:24.912Z"
+        }
+    },
+    {
+        "id": 10,
+        "name": "tofa",
+        "ulasan": "tessss",
+        "rating": 1,
+        "createdAt": "2024-07-02T15:50:21.008Z",
+        "updatedAt": "2024-07-02T15:50:21.008Z",
+        "userId": 5,
+        "ulas": {
+            "id": 5,
+            "createdAt": "2024-07-02T15:33:15.751Z",
+            "updatedAt": "2024-07-02T15:33:15.751Z"
+        }
     }
 ]

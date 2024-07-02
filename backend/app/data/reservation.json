@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "sadasdasd",
+        "phoneNumber": "1012131343413",
+        "serviceType": "Manicure and Pedicure",
+        "datetime": "1212-12-11T04:13:48.000Z",
+        "createdAt": "2024-07-02T15:40:02.456Z",
+        "updatedAt": "2024-07-02T15:40:02.456Z",
+        "userId": 4,
+        "user": {
+            "id": 4,
+            "createdAt": "2024-07-02T15:32:24.912Z",
+            "updatedAt": "2024-07-02T15:32:24.912Z"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Tofa",
+        "phoneNumber": "89234586950",
+        "serviceType": "Haircuts and Styling",
+        "datetime": "1221-02-21T13:04:48.000Z",
+        "createdAt": "2024-07-02T15:41:05.742Z",
+        "updatedAt": "2024-07-02T15:41:05.742Z",
+        "userId": 4,
+        "user": {
+            "id": 4,
+            "createdAt": "2024-07-02T15:32:24.912Z",
+            "updatedAt": "2024-07-02T15:32:24.912Z"
+        }
+    }
+]
